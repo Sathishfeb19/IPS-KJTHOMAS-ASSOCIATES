@@ -1,0 +1,9 @@
+.btn-theme-invert {
+    color: #3399ff;
+    background:  #ffffff;
+}
+
+.btn-theme-invert {
+  color: #3399ff !important;
+    background:  #ffffff !important;
+}
