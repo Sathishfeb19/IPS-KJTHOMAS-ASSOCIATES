@@ -9,7 +9,7 @@ import { IpPageContactComponent } from './ip-page-contact/ip-page-contact.compon
 import { IpMemberdetailedComponent } from './ip-memberdetailed/ip-memberdetailed.component';
 
 export const routes: Routes = [
-    {path:'',component:IpHomepageComponent,title:'Home | K.J. Thomas Associates'},
+    {path:'',component:IpHomepageComponent},
     {path:'about',component:IpPageAboutComponent,title:'About | K.J. Thomas Associates'},
     {path:'contact',component:IpPageContactComponent,title:'Contact | K.J. Thomas Associates'},
     {path:'service',component:IpPageservicesComponent,title:'Services | K.J. Thomas Associates'},
