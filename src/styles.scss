@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.page-header h3 {
+    color: #ffffff !important;
+}
+
+.page-header .page-breadcrumb {
+          color: #ffffff !important;
+}
+
+.page-header .page-breadcrumb a {
+    color: #ffffff !important;
+}
+
+.btn-theme-invert {
+    color: #ffffff;
+    background: #3399ff;
+}
+
+.main-header-2 .navbar-default .navbar-nav li ul.drop-down li a:hover {
+    background: #3399ff !important;
+    color: #ffffff;
+}
