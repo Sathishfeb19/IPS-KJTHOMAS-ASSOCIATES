@@ -12,3 +12,8 @@
 .page-header .page-breadcrumb a {
     color: #ffffff !important;
 }
+
+.btn-theme-invert {
+    color: #ffffff;
+    background: #7a2408;
+}
