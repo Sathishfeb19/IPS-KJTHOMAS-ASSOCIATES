@@ -12,6 +12,7 @@ import { IpPageCustomsComponent } from './ip-page-customs/ip-page-customs.compon
 import { IpPageDisputeComponent } from './ip-page-dispute/ip-page-dispute.component';
 import { IpPageJurisdictionsComponent } from './ip-page-jurisdictions/ip-page-jurisdictions.component';
 import { IpPageLegalConsultancyComponent } from './ip-page-legal-consultancy/ip-page-legal-consultancy.component';
+import { IpGalleryComponent } from './ip-gallery/ip-gallery.component';
 
 export const routes: Routes = [
   { path: '', component: IpHomepageComponent },
@@ -21,6 +22,7 @@ export const routes: Routes = [
   { path: 'blog', component: IpGridBlogsComponent, title: 'Blogs | Adv KJ Thomas Kallampally Thiruvananthapuram' },
   { path: 'news', component: IpGridNewsComponent, title: 'News | Adv KJ Thomas Kallampally Thiruvananthapuram' },
   { path: 'our-team', component: IpMemberdetailedComponent, title: 'Our Team | Adv KJ Thomas Kallampally Thiruvananthapuram' },
+  { path: 'our-gallery', component: IpGalleryComponent, title: 'Our Gallery | Adv KJ Thomas Kallampally Thiruvananthapuram' },
   { path: 'legal-consultancy', component: IpPageLegalConsultancyComponent, title: 'Legal Consultancy | Adv KJ Thomas Kallampally Thiruvananthapuram' },
   { path: 'maritime-and-admiralty-law', component: IpPageMaritimeComponent, title: 'Maritime and Admiralty Law | Adv KJ Thomas Kallampally Thiruvananthapuram' },
   { path: 'international-trade-and-customs-law', component: IpPageCustomsComponent, title: 'International Trade & Customs Law | Adv KJ Thomas Kallampally Thiruvananthapuram' },
