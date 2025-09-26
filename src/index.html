@@ -38,27 +38,25 @@
   <script src="assets/js/venobox.min.js"></script>
   <script src="assets/js/custom-scripts.js"></script>
 
-<script> // Old way (non-passive)
-element.addEventListener('touchstart', handler);
+  <script> // Old way (non-passive)
+    element.addEventListener('touchstart', handler);
 
-// New way (passive)
-element.addEventListener('touchstart', handler, { passive: true });
-
-
-// Override jQuery's special events to use passive listeners
-jQuery.event.special.touchstart = {
-  setup: function (_, ns, handle) {
-    this.addEventListener("touchstart", handle, { passive: true });
-  }
-};
-jQuery.event.special.touchmove = {
-  setup: function (_, ns, handle) {
-    this.addEventListener("touchmove", handle, { passive: true });
-  }
-};
+    // New way (passive)
+    element.addEventListener('touchstart', handler, { passive: true });
 
 
-</script>
+    // Override jQuery's special events to use passive listeners
+    jQuery.event.special.touchstart = {
+      setup: function (_, ns, handle) {
+        this.addEventListener("touchstart", handle, { passive: true });
+      }
+    };
+    jQuery.event.special.touchmove = {
+      setup: function (_, ns, handle) {
+        this.addEventListener("touchmove", handle, { passive: true });
+      }
+    };
+  </script>
 
 </body>
 
