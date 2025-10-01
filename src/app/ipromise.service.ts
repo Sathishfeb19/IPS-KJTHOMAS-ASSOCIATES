@@ -10,7 +10,7 @@ export class IpromiseService {
 
   private API = 'https://ipromisesolutions.com/api_folder/';
 
-constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router) { }
 
 
   ContactFrm(

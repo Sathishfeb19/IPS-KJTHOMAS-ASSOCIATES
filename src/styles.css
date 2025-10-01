@@ -17,3 +17,15 @@
     color: #ffffff;
     background: #7a2408;
 }
+
+.btn.focus, .btn:focus, .btn:hover {
+   color: #7a2408;
+    background: #fff;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    border: 10px solid #7a2408;
+    border-radius: 4px;
+}
