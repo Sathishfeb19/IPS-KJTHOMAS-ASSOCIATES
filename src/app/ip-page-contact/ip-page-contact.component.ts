@@ -62,21 +62,35 @@ export class IpPageContactComponent {
       return;
     }
 
-    if (this.ContactFrm.valid) {
-      this.manas.ContactFrm(
-        this.ContactFrm.value.name,
-        this.ContactFrm.value.email,
-        this.ContactFrm.value.phone_number,
-        this.ContactFrm.value.msg_subject,
-        this.ContactFrm.value.message
-      ).subscribe((data: any) => {
-        if (data.status === 'Success') {
-          Swal.fire({ title: 'Our Team Contact Soon!', icon: 'success' });
-          this.ContactFrm.reset();
-        } else if (data.status === 'error') {
-          Swal.fire({ title: 'Contact Number Already Entered!', icon: 'warning' });
-        }
+   if (this.ContactFrm.valid) {
+  this.manas.ContactFrm(
+    this.ContactFrm.value.name,
+    this.ContactFrm.value.email,
+    this.ContactFrm.value.phone_number,
+    this.ContactFrm.value.msg_subject,
+    this.ContactFrm.value.message
+  ).subscribe((data: any) => {
+    if (data.status === 'Success') {
+      Swal.fire({
+        title: 'Our Team Will Contact You Soon!',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      }).then(() => {
+        this.ContactFrm.reset();
+        // Option 1: Reload same page
+        window.location.reload();
+
+        // Option 2: Navigate to another route
+        // this.router.navigate(['/thank-you']);
+      });
+    } else if (data.status === 'error') {
+      Swal.fire({ 
+        title: 'Contact Number Already Entered!', 
+        icon: 'warning' 
       });
     }
+  });
+}
+
   }
 }
