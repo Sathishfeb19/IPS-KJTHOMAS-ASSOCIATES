@@ -7,3 +7,13 @@
   color: #3399ff !important;
     background:  #ffffff !important;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lora, serif !important;
+    font-style: normal;
+    font-weight: 600;
+    color: #555;
+    line-height: 32px;
+    margin: 0 0 16px 0;
+    letter-spacing: .03em;
+}
